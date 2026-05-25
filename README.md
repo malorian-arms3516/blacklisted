@@ -12,3 +12,7 @@ I am developing this project as a way to learn web design through Python. I have
 # What can I find in this project?
 
 Information such as specific vehicle details, or character background and story details can be found within this directory. Additional vehicle details for addon car mods will eventually be added, and a modding section will be implemented down the road.
+
+# Can I access this project live?
+
+Yes, it is currently being hosted [here](https://blacklisted-directory.vercel.app/) under Vercel.
