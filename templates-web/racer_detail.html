@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Suspect Dossier: {{ racer.alias }} — Blacklist Archive{% endblock %}
+
+{% block content %}
+
+<div class="section-label"><a href="/racers" class="back-link">← All Suspects</a></div>
+
+<div class="dossier">
+
+  <div class="dossier-header" style="border-bottom: 3px solid var(--orange);">
+    <div>
+      <div class="dossier-name" style="font-size: 56px;">{{ racer.alias }}</div>
+      <div class="dossier-sub" style="font-size: 14px; margin-top: 10px; color: var(--text);">{{ racer.real_name }}</div>
+    </div>
+    <div class="dossier-badge" style="font-size: 18px; padding: 10px 20px;">BLACKLIST #{{ racer.rank }}</div>
+  </div>
+
+  <div class="racer-profile-data" style="margin-top: 30px; font-family: 'Share Tech Mono', monospace; line-height: 1.8;">
+    <div style="margin-bottom: 25px;">
+      <span style="color: var(--orange); font-weight: bold; display: block; font-size: 11px; letter-spacing: 2px;">ALIAS:</span>
+      <span style="font-size: 20px; color: var(--text);">{{ racer.alias }}</span>
+    </div>
+
+    <div style="margin-bottom: 25px;">
+      <span style="color: var(--orange); font-weight: bold; display: block; font-size: 11px; letter-spacing: 2px;">REAL NAME:</span>
+      <span style="font-size: 20px; color: var(--text);">{{ racer.real_name }}</span>
+    </div>
+
+    <div style="margin-bottom: 25px;">
+      <span style="color: var(--orange); font-weight: bold; display: block; font-size: 11px; letter-spacing: 2px;">RANK:</span>
+      <span style="font-size: 20px; color: var(--text);">Blacklist #{{ racer.rank }}</span>
+    </div>
+
+    <div style="margin-bottom: 25px;">
+      <span style="color: var(--orange); font-weight: bold; display: block; font-size: 11px; letter-spacing: 2px;">INFRACTIONS:</span>
+      <ul style="list-style: none; padding-left: 0; margin-top: 5px;">
+        {% for infractions in racer.infractions %}
+          <li style="font-size: 18px; color: var(--text); border-left: 2px solid var(--border); padding-left: 15px; margin-bottom: 5px;">{{ infractions }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 25px;">
+      <span style="color: var(--orange); font-weight: bold; display: block; font-size: 11px; letter-spacing: 2px;">SUSPECTED VEHICLES IN POSSESSION:</span>
+      <ul style="list-style: none; padding-left: 0; margin-top: 5px;">
+        {% for vehicle in racer.suspected_vehicles %}
+          <li style="font-size: 18px; color: var(--text); border-left: 2px solid var(--border); padding-left: 15px; margin-bottom: 5px;">{{ vehicle }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 25px;">
+      <span style="color: var(--orange); font-weight: bold; display: block; font-size: 11px; letter-spacing: 2px;">SUSPECT INFORMATION:</span>
+      <p style="font-size: 15px; color: var(--text-dim); line-height: 1.6; text-align: justify; background: rgba(255,255,255,0.02); padding: 20px; border: 1px solid var(--border-dim);">
+        {{ racer.bio }}
+      </p>
+    </div>
+  </div>
+
+  <div class="dossier-actions" style="margin-top: 40px;">
+    <a href="/racers" class="btn-secondary">← Return to Intel</a>
+    {% if session.logged_in %}
+      <a href="/delete_racer/{{ racer.rank }}" class="btn-danger" style="margin-left: auto;" onclick="return confirm('Purge this intelligence report?')">Purge Intel</a>
+    {% endif %}
+  </div>
+
+</div>
+
+{% endblock %}

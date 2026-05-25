@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Blacklist Archive — Dashboard{% endblock %}
+
+{% block content %}
+
+<!-- Section 1: Blacklist Signature Cars (Horizontal Scroll) -->
+<div class="section-label">Blacklist Signature Vehicles</div>
+<div class="cars-scroll-wrapper">
+  <div class="cars-scroll-track">
+    {% set blacklist_cars = cars | selectattr('is_blacklist_car', 'equalto', true) | sort(attribute='blacklist_rank') %}
+    {% for car in blacklist_cars %}
+    <a href="/car/{{ car.id }}" class="car-card">
+      <div class="car-tier">BLACKLIST #{{ car.blacklist_rank }}</div>
+      <div class="car-name">{{ car.make }} {{ car.model }}</div>
+      <div class="car-make">{{ car.year }} · ID #{{ "%03d" | format(car.id) }}</div>
+
+      <div class="wanted-stars">
+        {% set threat = ((16 - car.blacklist_rank) / 15 * 5) | int %}
+        {% for i in range(5) %}
+          <div class="star {% if i < threat %}on{% endif %}"></div>
+        {% endfor %}
+      </div>
+
+      <div class="car-stats-row">
+        <div>
+          <div class="stat-label">Top Speed</div>
+          <div class="stat-val">{{ car.top_speed.split(' ')[0] }}</div>
+        </div>
+        <div>
+          <div class="stat-label">Power</div>
+          <div class="stat-val">{{ car.power.split(' ')[0] }}</div>
+        </div>
+        <div>
+          <div class="stat-label">0–100</div>
+          <div class="stat-val">{{ car.acceleration.split(' ')[2] if 'in' in car.acceleration else car.acceleration }}</div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

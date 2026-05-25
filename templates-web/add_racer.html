@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}File New Intel — Blacklist Archive{% endblock %}
+
+{% block content %}
+
+<div class="section-label">File New Suspect Intel</div>
+
+<div class="form-panel">
+  <form method="POST" action="/add_racer">
+
+    <div class="form-section-title">Suspect Identity</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Alias (Street Name)</label>
+        <input type="text" name="alias" placeholder="e.g. RAZOR" required>
+      </div>
+      <div class="form-group">
+        <label>Real Name</label>
+        <input type="text" name="real_name" placeholder="e.g. Clarence Callahan" required>
+      </div>
+      <div class="form-group">
+        <label>Blacklist Rank (1–15)</label>
+        <input type="number" name="rank" min="1" max="100" required>
+      </div>
+      <div class="form-group">
+        <label>Primary Strength</label>
+        <input type="text" name="strength" placeholder="e.g. Sprints, High Heat Pursuits">
+      </div>
+    </div>
+
+    <div class="form-section-title" style="margin-top: 1.5rem;">Assets & Intel</div>
+    <div class="form-group" style="grid-column: 1 / -1;">
+      <label>Suspected Vehicles (Comma-separated)</label>
+      <input type="text" name="suspected_vehicles" placeholder="e.g. BMW M3 GTR GT, Ford Mustang GT">
+    </div>
+
+    <div class="form-section-title" style="margin-top: 1.5rem;">Suspect Information (Detailed Bio)</div>
+    <div class="form-group" style="grid-column: 1 / -1;">
+      <label>Intelligence Report</label>
+      <textarea name="bio" rows="8" placeholder="Detailed observations, known accomplices, operating sectors..." required></textarea>
+    </div>
+
+    <div class="form-actions">
+      <a href="/racers" class="btn-secondary">Cancel</a>
+      <button type="submit" class="btn-primary">File Intelligence Report</button>
+    </div>
+
+  </form>
+</div>
+
+{% endblock %}

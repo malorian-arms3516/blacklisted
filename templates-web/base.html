@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Blacklist Archive{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-brand">
+        <a href="/" class="logo">BLACKLIST ARCHIVE</a>
+        <span class="header-sub">Rockport Police Dept · Vehicle Intelligence Database</span>
+      </div>
+      <div class="header-auth">
+        {% if session.logged_in %}
+          <span style="font-size: 10px; color: var(--orange); margin-right: 15px;">AGENT: CROSS</span>
+          <a href="/logout" class="btn-secondary" style="padding: 4px 10px; font-size: 9px;">SECURE LOGOUT</a>
+        {% else %}
+          <a href="/login" class="btn-secondary" style="padding: 4px 10px; font-size: 9px;">AUTHORIZED LOGIN</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="header-tape">
+      <span>CLASSIFICATION: RESTRICTED</span>
+      <span>DISTRICT: ROCKPORT</span>
+      <span>STATUS: {% if session.logged_in %}ADMIN ACCESS GRANTED{% else %}ACTIVE MONITORING{% endif %}</span>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <a href="/" class="nav-item {% if request.path == '/' %}active{% endif %}">Dashboard</a>
+    <a href="/racers" class="nav-item {% if request.path.startswith('/racer') %}active{% endif %}">Blacklist Intel</a>
+    <a href="/database" class="nav-item {% if request.path == '/database' or request.path.startswith('/car') %}active{% endif %}">Vehicle Database</a>
+    {% if session.logged_in %}
+      <a href="/add" class="nav-item {% if request.path == '/add' %}active{% endif %}" style="color: var(--orange);">+ File Entry</a>
+      <a href="/add_racer" class="nav-item {% if request.path == '/add_racer' %}active{% endif %}" style="color: var(--orange);">+ File Racer</a>
+    {% endif %}
+  </nav>
+
+  <main class="site-main">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="flash-message" style="background: var(--red); color: white; padding: 10px; margin-bottom: 20px; font-size: 12px; border-left: 4px solid #fff;">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <span>BLACKLIST ARCHIVE v1.1</span>
+    <span>ROCKPORT PD · CLASSIFIED</span>
+    <span>FOR OFFICIAL USE ONLY</span>
+  </footer>
+
+</body>
+</html>

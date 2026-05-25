@@ -1,0 +1,122 @@
+[
+  {
+    "rank": 1,
+    "alias": "RAZOR",
+    "real_name": "Clarence Callahan",
+    "infractions": ["GRAND THEFT AUTO","ORGANIZED STREET RACING SYNDICATE","MECHANICAL SABOTAGE","ILLEGAL STREET RACING","RECKLESS DRIVING","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","CRIMINAL MISCHIEF","OBSTRUCTION OF JUSTICE","RESISTING ARREST"],
+    "suspected_vehicles": ["2001 BMW M3 GTR GT", "2005 Ford Mustang GT", "1998 Nissan Silvia K's Aero", "2017 Pagani Huayra BC"],
+    "bio": "CASE FILE: R1-CALLAHAN. Suspect is considered one of the Rockport Police Department’s highest-priority street racing suspects and the acting ringleader of the Blacklist syndicate. Originally operating a heavily modified black Ford Mustang GT before unlawfully acquiring a customized BMW M3 GTR through mechanical sabotage during an organized street race, the suspect quickly rose through the Blacklist rankings using intimidation, fraudulent race wins, and aggressive pursuit evasion tactics. Intelligence reports indicate that the suspect frequently organizes illegal race events across Downtown Rockport and is directly linked to multiple incidents involving excessive property damage, reckless endangerment, and interference with law enforcement operations. The suspect demonstrates high-risk driving behavior during pursuits and is known to provoke officers into extended high-speed engagements to build notoriety among local racers."
+  },
+  {
+    "rank": 2,
+    "alias": "BULL",
+    "real_name": "Toru Sato",
+    "infractions": ["ILLEGAL STREET RACING","SPEED CONTEST","RECKLESS DRIVING","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","EXCESSIVE SPEEDING","TRAFFIC VIOLATIONS","PARTICIPATION IN ILLEGAL ORGANIZED RACING ACTIVITY"],
+    "suspected_vehicles": ["2004 Mercedes-Benz SLR McLaren"],
+    "bio": "CASE FILE: R2-SATO. Suspect operates a black Mercedes-Benz SLR McLaren and specializes in high-speed sprint races conducted primarily along interstate corridors and industrial sectors. RPD surveillance notes indicate that Bull maintains a calm and disciplined driving style compared to other Blacklist members, relying on controlled high-speed runs and calculated police evasion rather than reckless aggression. Despite his composed demeanor, he has been connected to numerous interstate pursuit incidents involving excessive speed and coordinated racing activity. Intelligence suggests that Bull acts as one of Razor’s primary enforcers and logistics coordinators within the Blacklist hierarchy."
+  },
+  {
+    "rank": 3,
+    "alias": "RONNIE",
+    "real_name": "Ronald McCrea",
+    "infractions": ["AGGRAVATED ASSAULT WITH A MOTOR VEHICLE","RECKLESS DRIVING","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","SPEED CONTEST","CRIMINAL MISCHIEF","PARTICIPATION IN ILLEGAL ORGANIZED RACING ACTIVITY"],
+    "suspected_vehicles": ["2006 Aston Martin DB9", "1998 Toyota Supra Turbo", "2017 Nissan GT-R Premium"],
+    "bio": "CASE FILE: R3-MCCREA. Suspect is a wealthy Blacklist racer operating a heavily modified Aston Martin DB9, previously seen driving a Toyota Supra before advancing within the syndicate. RPD intelligence identifies the suspect as a pursuit-oriented racer known for intentionally targeting police units during active chases using vehicle immobilization tactics and PIT-style impacts. Reports indicate that he routinely antagonizes law enforcement personnel and uses his financial resources to acquire performance modifications and evade prosecution. Suspect’s aggressive driving behavior and disregard for officer safety have elevated him to a high-risk pursuit classification."
+  },
+  {
+    "rank": 4,
+    "alias": "JV",
+    "real_name": "Joe Vega",
+    "infractions": ["SPEED CONTEST","RECKLESS DRIVING","DISORDERLY CONDUCT","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","FAILURE TO COMPLY WITH LAWFUL ORDER","PUBLIC ENDANGERMENT"],
+    "suspected_vehicles": ["2006 Dodge Viper SRT-10", "2016 Ferrari LaFerrari"],
+    "bio": "CASE FILE: R4-VEGA. Suspect is a highly recognizable Blacklist member associated with nightclub activity, high-profile street racing events, and persistent police attention throughout Rockport. Operating a bright green Dodge Viper SRT-10, the suspect has cultivated a public reputation that attracts both racers and law enforcement alike. RPD records describe him as highly evasive and extremely active during nighttime racing operations, frequently appearing at large unauthorized gatherings and street circuits. His driving behavior is characterized by aggressive acceleration, excessive speed, and deliberate attempts to provoke lengthy pursuits to increase his street reputation."
+  },
+  {
+    "rank": 5,
+    "alias": "WEBSTER",
+    "real_name": "Wes Allen",
+    "infractions": ["ILLEGAL MODIFICATION OF MOTOR VEHICLE","RECKLESS DRIVING","SPEED CONTEST","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","OPERATION OF UNSAFE MOTOR VEHICLE ON PUBLIC ROADWAY","CONSPIRACY (ILLEGAL TUNING/RACING NETWORK INVOLVEMENT)"],
+    "suspected_vehicles": ["2005 Chevrolet Corvette Coupe","2020 Chevrolet Corvette Stingray"],
+    "bio": "CASE FILE: R5-ALLEN. Suspect is a technically skilled racer heavily involved in Rockport’s underground tuning culture and performance modification scene. Operating a stripped-down Chevrolet Corvette C6 built for maximum speed efficiency, the suspect is frequently observed near performance garages, chop shops, and tuning warehouses throughout the city. Intelligence reports suggest he possesses advanced knowledge of vehicle performance optimization and often modifies vehicles to circumvent police pursuit capabilities. His vehicle’s lightweight configuration and high-speed tuning make him particularly dangerous during freeway pursuits."
+  },
+  {
+    "rank": 6,
+    "alias": "MING",
+    "real_name": "Hector Domingo",
+    "infractions": ["EXCESSIVE SPEEDING","SPEED CONTEST","RECKLESS DRIVING","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","VEHICLE EQUIPMENT VIOLATIONS","TRAFFIC CONTROL DEVICE VIOLATIONS"],
+    "suspected_vehicles": ["2005 Lamborghini Gallardo","2010 Lamborghini Murciélago LP 670-4 SuperVeloce"],
+    "bio": "CASE FILE: R6-DOMINGO. Suspect operates a visually stock-looking Lamborghini Gallardo that conceals extensive performance modifications beneath its factory appearance. Known for targeting radar zones and speed enforcement corridors, Ming has repeatedly triggered excessive-speed violations while avoiding prolonged police contact through rapid acceleration and tactical route selection. RPD intelligence suggests that Ming intentionally maintains an understated exterior profile to avoid detection by patrol units and aerial surveillance."
+  },
+  {
+    "rank": 7,
+    "alias": "KAZE",
+    "real_name": "Kira Nakazato",
+    "infractions": ["AGGRAVATED RECKLESS DRIVING","AGGRAVATED ASSAULT WITH A MOTOR VEHICLE","CRIMINAL MISCHIEF","SPEED CONTEST","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT"],
+    "suspected_vehicles": ["2004 Mercedes-Benz CLK 500","2018 Mercedes-AMG C 63 Cabriolet"],
+    "bio": "CASE FILE: R7-NAKAZATO. Known on the streets as 'Kamikaze,' Suspect is one of the Blacklist’s most aggressive drivers, operating a high-performance Mercedes-Benz CLK 500 with documented involvement in multiple collision-related pursuit incidents. Unlike other racers who prioritize clean escapes, suspect is known for using direct contact tactics against rival racers and police units alike. RPD pursuit reports frequently cite deliberate side-swiping, unsafe lane changes, and reckless overtaking maneuvers during active pursuits. Officers classify her as highly unpredictable and collision-prone."
+  },
+  {
+    "rank": 8,
+    "alias": "JEWELS",
+    "real_name": "Jade Barrett",
+    "infractions": ["SPEED CONTEST","RECKLESS DRIVING","EXCESSIVE NOISE ORDINANCE VIOLATIONS","EXHIBITION OF SPEED","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT"],
+    "suspected_vehicles": ["2005 Ford Mustang GT","2015 Ford Mustang GT"],
+    "bio": "CASE FILE: R8-BARRETT. Suspect is a veteran Blacklist racer specializing in American muscle platforms and high-torque street builds. Operating a heavily modified Ford Mustang GT, she is recognized for extensive experience in underground racing circuits and a preference for brute-force acceleration over technical cornering. Intelligence gathered by the RPD indicates that the suspect frequently participates in high-stakes drag events and possesses significant mechanical familiarity with performance tuning. Officers report that her driving style relies heavily on intimidation and raw horsepower."
+  },
+  {
+    "rank": 9,
+    "alias": "EARL",
+    "real_name": "Eugene James",
+    "infractions": ["SPEED CONTEST","RECKLESS DRIVING","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","DANGEROUS OVERTAKING/IMPROPER PASSING","PUBLIC ROADWAY ENDANGERMENT"],
+    "suspected_vehicles": ["2003 Mitsubishi Lancer Evolution VIII","2019 Porsche 911 GT3 RS"],
+    "bio": "CASE FILE: R9-JAMES. Suspect is a coastal-sector street racer known for favoring imported tuner vehicles and challenging larger-displacement muscle cars throughout Rockport’s industrial and waterfront districts. Operating a Mitsubishi Lancer Evolution VIII, the suspect demonstrates advanced cornering ability and technical driving precision during circuit races and pursuit evasions. RPD surveillance notes indicate that he actively seeks competition against higher-horsepower rivals and frequently uses dense urban routes to escape responding patrol units."
+  },
+  {
+    "rank": 10,
+    "alias": "BARON",
+    "real_name": "Karl Smit",
+    "infractions": ["SPEED CONTEST","ILLEGAL GAMBLING","RECKLESS DRIVING","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","CRIMINAL FACILITATION"],
+    "suspected_vehicles": ["2006 Porsche Cayman S","2019 Porsche 718 Spyder"],
+    "bio": "CASE FILE: R10-SMIT. Suspect is a wealthy Blacklist member associated with luxury performance vehicles and high-value aftermarket components. Driving a Porsche Cayman S, the suspect is known within the underground scene for favoring factory-engineered performance over heavily customized builds. Intelligence reports suggest that he finances portions of Rockport’s racing network and frequently wagers large sums during organized events. Despite his polished appearance, he has repeatedly engaged in unlawful racing activity and felony-speed pursuits."
+  },
+  {
+    "rank": 11,
+    "alias": "BIG LOU",
+    "real_name": "Lou Park",
+    "infractions": ["SPEED CONTEST","RECKLESS DRIVING","EXHIBITION OF SPEED","FAILURE TO MAINTAIN CONTROL OF MOTOR VEHICLE","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT"],
+    "suspected_vehicles": ["2006 Mitsubishi Eclipse GT","1999 Mitsubishi Eclipse GSX"],
+    "bio": "CASE FILE: R11-PARK. Suspect operates a modified Mitsubishi Eclipse GT and is widely recognized for his loud public persona and inconsistent driving under pressure. RPD pursuit data indicates that Lou frequently abandons races or disengages from police encounters prematurely when confronted with escalating heat levels. Despite questionable composure, his vehicle remains highly modified for straight-line acceleration and street racing. Officers describe him as overconfident but tactically unreliable."
+  },
+  {
+    "rank": 12,
+    "alias": "IZZY",
+    "real_name": "Isabel Diaz",
+    "infractions": ["CONSPIRACY TO ENGAGE IN ILLEGAL STREET RACING","SPEED CONTEST","UNLAWFUL USE OF ELECTRONIC SURVEILLANCE DEVICES","RECKLESS DRIVING","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT"],
+    "suspected_vehicles": ["2004 Mazda RX-8","2017 Nissan GT-R Premium"],
+    "bio": "CASE FILE: R12-DIAZ. Suspect comes from a deeply embedded street racing family with extensive connections throughout Rockport’s underground automotive scene. Driving a Mazda RX-8 equipped with extensive tuning upgrades, Izzy is known for technical driving precision and coordinated support from associates and relatives involved in racing operations. RPD intelligence suggests that her network frequently warns racers of police movement and enforcement operations, making her difficult to apprehend during active pursuits."
+  },
+  {
+    "rank": 13,
+    "alias": "VIC",
+    "real_name": "Victor Vasquez",
+    "infractions": ["RECKLESS DRIVING (REPEAT OFFENDER)","SPEED CONTEST","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","EXCESSIVE SPEEDING","TRAFFIC OBSTRUCTION/INTERFERENCE WITH ROADWAY FLOW"],
+    "suspected_vehicles": ["1998 Toyota Supra Turbo","2008 Nissan 350Z"],
+    "bio": "CASE FILE: R13-VASQUEZ. Suspect has maintained a long-standing presence within the lower tiers of the Blacklist and is considered one of the most experienced repeat offenders in Rockport’s street racing environment. Driving a heavily modified Toyota Supra, the suspect is known for opportunistic racing tactics and calculated risk-taking during pursuits. RPD officers describe him as unpredictable but highly competent behind the wheel, particularly during dense traffic conditions and urban escapes."
+  },
+  {
+    "rank": 14,
+    "alias": "TAZ",
+    "real_name": "Vince Kilic",
+    "infractions": ["UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","AGGRAVATED RECKLESS DRIVING","AGGRAVATED ASSAULT WITH A MOTOR VEHICLE","CRIMINAL MISCHIEF","SPEED CONTEST","RESISTING ARREST","PUBLIC ENDANGERMENT"],
+    "suspected_vehicles": ["2002 Lexus IS 300","1988 BMW M3 Evolution II"],
+    "bio": "CASE FILE: R14-KILIC. Suspect is a highly volatile Blacklist racer operating primarily within the Rosewood district and is regarded by the RPD as an extreme pursuit risk. Known for openly antagonizing law enforcement, the suspect frequently initiates pursuits intentionally and demonstrates little regard for public safety during escapes. His aggressive driving behavior, repeated pursuit incidents, and anti-police reputation have made him a major enforcement target across multiple precincts."
+  },
+  {
+    "rank": 15,
+    "alias": "SONNY",
+    "real_name": "Ho Seun",
+    "infractions": ["ILLEGAL TRAFFICKING OF AUTOMOTIVE PARTS","ILLEGAL MODIFICATION OF MOTOR VEHICLE","SPEED CONTEST","RECKLESS DRIVING","UNLAWFUL FLEEING/ATTEMPTING TO EVADE LAW ENFORCEMENT","CONSPIRACY (ILLEGAL PARTS DISTRIBUTION NETWORK)"],
+    "suspected_vehicles": ["2005 Volkswagen Golf GTI","2000 Honda Civic Type R"],
+    "bio": "CASE FILE: R15-SEUN. Suspect is a 'local legend' in the Rockport/Rosewood border region, and is an early-tier Blacklist racer heavily invested in aftermarket performance upgrades and underground parts acquisition. Operating a modified Volkswagen Golf GTI, Sonny is known for sourcing performance components ahead of public release and aggressively tuning his vehicle for acceleration-focused races. RPD intelligence links him to illegal parts trafficking networks and unauthorized tuning operations operating within Rockport’s industrial districts."
+  }
+]

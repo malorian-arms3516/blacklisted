@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Blacklist Archive — Vehicle Database{% endblock %}
+
+{% block content %}
+
+<div class="section-label">Complete Vehicle Database — {{ cars|length }} on Record</div>
+<div class="full-car-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 15px;">
+  {% for car in cars | sort(attribute='make') %}
+  <div style="position: relative;">
+    <a href="/car/{{ car.id }}" class="mini-car-card" style="display: block; background: var(--bg-surface); border: 1px solid var(--border-dim); padding: 12px; transition: border-color 0.15s; text-decoration: none;">
+      <div style="font-size: 9px; color: var(--text-muted); margin-bottom: 4px;">ID #{{ "%03d" | format(car.id) }}</div>
+      <div style="font-family: 'Oswald', sans-serif; font-size: 16px; color: var(--text);">{{ car.make }} {{ car.model }}</div>
+      <div style="font-size: 10px; color: var(--orange-dim);">{{ car.year }} · {{ car.country_origin }}</div>
+    </a>
+    {% if session.logged_in %}
+      <a href="/delete/{{ car.id }}" style="position: absolute; top: 10px; right: 10px; color: var(--red); font-size: 9px; text-decoration: none;" onclick="return confirm('Purge this record?')">[PURGE]</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+.mini-car-card:hover { border-color: var(--orange); }
+</style>
+
+{% endblock %}

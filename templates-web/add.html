@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block title %}File New Entry — Blacklist Archive{% endblock %}
+
+{% block content %}
+
+<div class="section-label">File New Vehicle Entry</div>
+
+<div class="form-panel">
+  <form method="POST" action="/add">
+
+    <div class="form-section-title">Vehicle Identity</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Manufacturer (Make)</label>
+        <input type="text" name="make" placeholder="e.g. BMW" required>
+      </div>
+      <div class="form-group">
+        <label>Model</label>
+        <input type="text" name="model" placeholder="e.g. M3 GTR (Race)" required>
+      </div>
+      <div class="form-group">
+        <label>Chassis</label>
+        <input type="text" name="chassis" placeholder="e.g. E46">
+      </div>
+      <div class="form-group">
+        <label>Year</label>
+        <input type="text" name="year" placeholder="e.g. 2001">
+      </div>
+      <div class="form-group">
+        <label>Country of Origin</label>
+        <input type="text" name="country_origin" placeholder="e.g. Germany">
+      </div>
+    </div>
+
+    <div class="form-section-title" style="margin-top: 1.5rem;">Intelligence Status</div>
+    <div class="form-grid">
+      <div class="form-group" style="flex-direction: row; align-items: center; gap: 10px;">
+        <input type="checkbox" name="is_blacklist_car" style="width: auto;">
+        <label style="margin-bottom: 0;">BLACKLIST SIGNATURE VEHICLE</label>
+      </div>
+      <div class="form-group">
+        <label>Blacklist Rank (1-15)</label>
+        <input type="number" name="blacklist_rank" min="1" max="15" placeholder="Leave empty if not rank">
+      </div>
+    </div>
+
+    <div class="form-section-title" style="margin-top: 1.5rem;">Technical Specs</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Engine</label>
+        <input type="text" name="engine" placeholder="e.g. 4.0L V8">
+      </div>
+      <div class="form-group">
+        <label>Aspiration</label>
+        <input type="text" name="aspiration" placeholder="e.g. Naturally Aspirated">
+      </div>
+      <div class="form-group">
+        <label>Transmission</label>
+        <input type="text" name="transmission" placeholder="e.g. 6-speed sequential">
+      </div>
+      <div class="form-group">
+        <label>Torque</label>
+        <input type="text" name="torque" placeholder="e.g. 480 Nm">
+      </div>
+      <div class="form-group">
+        <label>Car Cost ($)</label>
+        <input type="number" name="car_cost" value="0">
+      </div>
+    </div>
+
+    <div class="form-section-title" style="margin-top: 1.5rem;">Performance Data</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Top Speed</label>
+        <input type="text" name="top_speed" placeholder="e.g. 300 kph / 186 mph">
+      </div>
+      <div class="form-group">
+        <label>0–100 kph</label>
+        <input type="text" name="acceleration" placeholder="e.g. 0-100 kph in 3.7 seconds">
+      </div>
+      <div class="form-group">
+        <label>Power</label>
+        <input type="text" name="power" placeholder="e.g. 444 bhp @ 7500 rpm">
+      </div>
+      <div class="form-group">
+        <label>Weight</label>
+        <input type="text" name="weight" placeholder="e.g. 1100 kg / 2425 lbs">
+      </div>
+    </div>
+
+    <div class="form-section-title" style="margin-top: 1.5rem;">In-Game Ratings (0–100)</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Speed Rating</label>
+        <input type="number" name="speed_rating" min="0" max="100" value="50">
+      </div>
+      <div class="form-group">
+        <label>Acceleration Rating</label>
+        <input type="number" name="accel_rating" min="0" max="100" value="50">
+      </div>
+      <div class="form-group">
+        <label>Handling Rating</label>
+        <input type="number" name="handl_rating" min="0" max="100" value="50">
+      </div>
+    </div>
+
+    <div class="form-section-title" style="margin-top: 1.5rem;">Description & Intel</div>
+    <div class="form-group" style="grid-column: 1 / -1;">
+      <label>Description</label>
+      <textarea name="description" rows="4" placeholder="Observations, handling notes, in-game performance..."></textarea>
+    </div>
+
+    <div class="form-actions">
+      <a href="/database" class="btn-secondary">Cancel</a>
+      <button type="submit" class="btn-primary">File Entry</button>
+    </div>
+
+  </form>
+</div>
+
+{% endblock %}
